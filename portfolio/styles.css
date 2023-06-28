@@ -1,0 +1,1139 @@
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/bernier-shade */
+@import "https://fonts.fontstorage.com/import/berniershade.css";
+/*
+	Bernier Shade, 400 : hero font
+*/
+/* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/bradobrei */
+@import "https://fonts.fontstorage.com/import/bradobrei.css";
+/*
+	Bradobrei, 400
+*/ /* Please do not use this import in production. You could download this font from here https://fontstorage.com/font/america */
+@import "https://fonts.fontstorage.com/import/america.css";
+/*
+	America XIX, 400
+*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary: #1c2530;
+  --secondary: #f7b661;
+  --white: #eee;
+  --black: black;
+  --bg1: #6e07f3;
+  --gradient: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* design laptop navbar */
+nav.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 2rem;
+  background-color: white;
+}
+nav.navbar a.logo {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Bradobrei";
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav.navbar ul a {
+  text-decoration: none;
+  color: var(--black);
+  font-family: sans-serif;
+  font-size: 1rem;
+  transition: 500ms;
+}
+
+nav.navbar ul a:hover {
+  color: var(--bg1);
+}
+
+nav.navbar .socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+nav.navbar .socials a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+nav.navbar .socials a i {
+  color: var(--primary);
+  font-size: 1.1rem;
+}
+
+/* Hiding the handburger */
+nav.navbar .handburger {
+  color: var(--black);
+  font-size: 1.5rem;
+  transition: 200ms;
+  cursor: pointer;
+  display: none;
+}
+.socials a img {
+  height: 75px;
+  width: 80px;
+}
+nav.navbar .handburger:hover {
+  color: var(--bg1);
+}
+
+/* Hiding mobile navbar on laptop view */
+.mobile-navbar {
+  display: none;
+}
+
+/* hero section */
+.one {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.one h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  line-height: 1.2;
+  font-family: "Bernier Shade";
+}
+.one h2 {
+  font-size: 25px;
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+.avater {
+  position: absolute;
+  top: 33%;
+  left: 41%;
+}
+.herobg {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.sidea {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 15%;
+  top: 40%;
+}
+.sideb {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+}
+
+/* end of hero section */
+/*  about me*/
+.two {
+  height: 500px;
+  width: 100%;
+  background-color: var(--bg1);
+  position: relative;
+}
+.imgholder {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: #1c2530;
+  position: absolute;
+  left: 5%;
+  top: 22%;
+}
+.imgholder img{
+height: 250px;
+  width: 200px;
+   border-radius: 50%;
+   position: absolute;
+   top: -20%;
+   object-fit: fill;
+}
+
+.two h2 {
+  font-size: 2rem;
+  text-align: center;
+  width: 70%;
+  position: absolute;
+  top: 22%;
+  left: 17%;
+  font-family: "comic Sans ms";
+}
+.two p {
+  width: 40%;
+  position: absolute;
+  left: 32%;
+  top: 35%;
+  text-align: center;
+  line-height: 1.5;
+}
+.two a {
+  padding: 15px 30px;
+  background-color: var(--white);
+  position: absolute;
+  left: 45%;
+  top: 70%;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* end of about me */
+/* my skills */
+.three {
+  height: 600px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.three .ey {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 30px;
+  font-family: "Bradobrei";
+}
+.gridsk {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+
+  gap: 3rem;
+}
+.gridsk div {
+  height: 450px;
+  width: 320px;
+  background-color: rgba(110, 7, 243, 0.05);
+  position: relative;
+  padding-inline: 1rem;
+  border-radius: 10px;
+  box-shadow: 20px 20px 10px grey;
+}
+.gridsk img {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+.gridsk div h2 {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  font-family: "America XIX";
+}
+.x {
+  position: absolute;
+  width: 80%;
+  top: 35%;
+  left: 13%;
+  text-align: center;
+  font-family: "comic Sans ms";
+}
+.gridsk div h3 {
+  position: absolute;
+  top: 51%;
+  left: 27%;
+  font-family: "America XIX";
+}
+.y {
+  position: absolute;
+  width: 70%;
+  top: 58%;
+  left: 13%;
+  text-align: center;
+  font-family: "comic Sans ms";
+}
+.gridsk div ul {
+  position: absolute;
+  top: 68%;
+  left: 40%;
+  line-height: 1.2;
+}
+.gridsk div ul h4 {
+  font-family: "comic Sans ms";
+}
+.gridsk div ul li {
+  list-style: none;
+  font-family: "comic Sans ms";
+}
+.skthree img {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 41%;
+  top: 5%;
+}
+.gridsk .skthree h2 {
+  position: absolute;
+  top: 25%;
+  left: 17%;
+}
+
+.four {
+  height: 600px;
+  width: 100%;
+  background-color: var(--bg1);
+  position: relative;
+}
+.four h2 {
+  font-family: "Bradobrei";
+  font-size: 1cm;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+.progrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+}
+
+.progrid div {
+  height: 400px;
+  width: 260px;
+  background-color: white;
+  border-radius: 10px;
+  border: #f7b661 2px solid;
+  position: relative;
+  /* padding-inline: 1rem; */
+  box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.7);
+}
+.protwo img {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.protwo h3 {
+  font-size: 0.5cm;
+  text-transform: uppercase;
+  font-family: "America XIX";
+  position: absolute;
+  top: 50%;
+  left: 17%;
+}
+.protwo p {
+  font-size: 0.3cm;
+  text-transform: uppercase;
+  font-family: "comic sans ms";
+  position: absolute;
+  top: 60%;
+  width: 90%;
+  text-align: center;
+  line-height: 2;
+}
+.protwo a {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  padding: 10px 20px;
+  background-color: var(--bg1);
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.five {
+  height: 600px;
+  width: 100%;
+  background-color: rgba(110, 7, 243, 0.05);
+  position: relative;
+}
+.five h2 {
+  font-family: "Bradobrei";
+  font-size: 1cm;
+  position: absolute;
+  top: 5%;
+  left: 40%;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 50%;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+input {
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  box-shadow: 5px 5px 10px 5px lightblue;
+  color: black;
+}
+input:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+label {
+  margin: 10px;
+}
+textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 5px lightblue;
+  text-align: center;
+}
+textarea:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+button {
+  margin: 20px;
+  margin-left: 200px;
+  width: 30%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+  background-color: var(--bg1);
+}
+.soc {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  position: absolute;
+  left: 80%;
+  top: 20%;
+}
+.soc a {
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--bg1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.six {
+  height: 80px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.six h3 {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.six a img {
+  height: 60px;
+  width: 60px;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 5px 5px;
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  background-color: white;
+}
+/* end of my skills */
+
+/* Design for mobile view   iphone*/
+@media screen and (max-width: 767px) {
+  nav.navbar {
+    padding-inline: 1rem;
+  }
+  nav.navbar ul {
+    display: none;
+  }
+
+  nav.navbar .socials {
+    display: none;
+  }
+
+  nav.navbar .handburger {
+    display: block;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg1);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    padding-inline: 2rem;
+    transition: 1s all;
+  }
+
+  .mobile-navbar header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .mobile-navbar header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    /* border-bottom: 2px solid var(--secondary); */
+  }
+
+  .mobile-navbar header .top a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .mobile-navbar header .top a span {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+  .mobile-navbar header .top .handburger {
+    color: var(--black);
+    font-size: 1.5rem;
+    transition: 200ms;
+  }
+  .mobile-navbar header .top .handburger:hover {
+    color: var(--bg1);
+  }
+
+  .mobile-navbar header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar header ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-navbar header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 200ms;
+  }
+
+  .mobile-navbar header ul li a:hover {
+    color: var(--black);
+    margin-left: 10px;
+  }
+
+  .mobile-navbar .socials {
+    align-self: center;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .mobile-navbar .socials a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .mobile-navbar .socials a i {
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  /* hero section */
+
+  .one {
+    height: 800px;
+    overflow: hidden;
+  }
+  .one h1 {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0%;
+  }
+  .one h2 {
+    width: 95%;
+    text-align: center;
+    left: 2%;
+    top: 30%;
+  }
+  .avater {
+    top: 43%;
+    z-index: 33;
+    left: 26%;
+  }
+  .sidea {
+    left: 0;
+    top: 42%;
+  }
+  .sideb {
+    left: 70%;
+    top: 50%;
+  }
+  .herobg {
+    bottom: -10%;
+  }
+  /* end of hero section */
+  /* about me */
+  .two {
+    height: 580px;
+    overflow: hidden;
+  }
+  .imgholder {
+    top: 2%;
+    left: 27%;
+  }
+
+  .two h2 {
+    top: 38%;
+    width: 90%;
+    left: 5%;
+  }
+  .two p {
+    width: 93%;
+    left: 3%;
+    top: 57%;
+  }
+  .two a {
+    top: 88%;
+    left: 35%;
+  }
+  /* end of about me */
+  /* my skills */
+  .three {
+    height: 1600px;
+  }
+  .gridsk {
+    grid-template-columns: repeat(1, 1fr);
+    top: 8%;
+  }
+  /* end of my skills */
+  /* my project */
+
+  .four {
+    height: 1900px;
+  }
+  .four h2 {
+    top: 1%;
+    left: 20%;
+  }
+  .progrid {
+    grid-template-columns: repeat(1, 1fr);
+    top: 5%;
+    left: 18%;
+  }
+  /* end of my project */
+  /* contact */
+  .five {
+    height: 800px;
+    overflow: hidden;
+  }
+  .five h2{
+    left: 20%;
+    top: 5%;
+  }
+  .soc{
+    grid-template-columns: repeat(4, 1fr);
+    left: 5%;
+    top: 84%;
+    gap: 1rem;
+  }
+  form{
+    width: 80%;
+    left: 8%;
+  }
+  button {
+    position: absolute;
+    bottom: -20%;
+  left: -30%;
+     padding: 15px 30px;
+  }
+  /* end of contact */
+  /* footer */
+  .six{
+    height: 100px;
+    overflow: hidden;
+  }
+  .six h3{
+    font-size: 20px;
+    left: 2%;
+    text-align: center;
+  }
+  .six a img{
+    display: none;
+  }
+}
+/* for ipad view */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav.navbar {
+    padding-inline: 1rem;
+  }
+  nav.navbar ul {
+    display: none;
+  }
+
+  nav.navbar .socials {
+    display: none;
+  }
+
+  nav.navbar .handburger {
+    display: block;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg1);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    padding-inline: 2rem;
+    transition: 1s all;
+  }
+
+  .mobile-navbar header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .mobile-navbar header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    /* border-bottom: 2px solid var(--secondary); */
+  }
+
+  .mobile-navbar header .top a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+  .mobile-navbar header .top a span {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+  .mobile-navbar header .top .handburger {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: 200ms;
+  }
+  .mobile-navbar header .top .handburger:hover {
+    color: var(--white);
+  }
+
+  .mobile-navbar header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar header ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-navbar header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 200ms;
+  }
+
+  .mobile-navbar header ul li a:hover {
+    color: var(--black);
+    margin-left: 10px;
+  }
+
+  .mobile-navbar .socials {
+    align-self: center;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .mobile-navbar .socials a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .mobile-navbar .socials a i {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  /* hero section */
+    .one h1 {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 5%;
+  }
+   .one h2 {
+    width: 75%;
+    text-align: center;
+    left: 12%;
+    top: 20%;
+  }
+  /* about me */
+   .two h2 {
+    top: 18%;
+    width: 70%;
+    left: 27%;
+  }
+  .two p {
+    width: 58%;
+    left: 35%;
+    top: 33%;
+    line-height: 1.5;
+  }
+    .two a {
+    top: 65%;
+    left: 55%;
+  }
+  /* my skills */
+   .three {
+    height: 1200px;
+  }
+  .gridsk {
+    grid-template-columns: repeat(2, 1fr);
+    top: 10%;
+  }
+  /* my project */
+   .four {
+    height: 1100px;
+  }
+    .progrid {
+    grid-template-columns: repeat(2, 1fr);
+    top: 15%;
+    left: 18%;
+  }
+  /* footer */
+    .six h3{
+    font-size: 20px;
+    left: 12%;
+    text-align: center;
+  }
+}
+
+
+/* android views */
+@media screen and (max-width: 360px) {
+
+  nav.navbar {
+    padding-inline: 1rem;
+  }
+  nav.navbar ul {
+    display: none;
+  }
+
+  nav.navbar .socials {
+    display: none;
+  }
+
+  nav.navbar .handburger {
+    display: block;
+  }
+
+  .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg1);
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 999;
+    padding-inline: 2rem;
+    transition: 1s all;
+  }
+
+  .mobile-navbar header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .mobile-navbar header .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    /* border-bottom: 2px solid var(--secondary); */
+  }
+
+  .mobile-navbar header .top a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .mobile-navbar header .top a span {
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+  }
+  .mobile-navbar header .top .handburger {
+    color: var(--black);
+    font-size: 1.5rem;
+    transition: 200ms;
+  }
+  .mobile-navbar header .top .handburger:hover {
+    color: var(--bg1);
+  }
+
+  .mobile-navbar header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar header ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .mobile-navbar header ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 200ms;
+  }
+
+  .mobile-navbar header ul li a:hover {
+    color: var(--black);
+    margin-left: 10px;
+  }
+
+  .mobile-navbar .socials {
+    align-self: center;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .mobile-navbar .socials a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .mobile-navbar .socials a i {
+    color: var(--primary);
+    font-size: 1.1rem;
+  }
+
+  /* hero section */
+
+  .one {
+    height: 900px;
+    overflow: hidden;
+  }
+  .one h1 {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 0%;
+  }
+  .one h2 {
+    width: 95%;
+    text-align: center;
+    left: 2%;
+    top: 35%;
+  }
+  .avater {
+    top: 53%;
+    z-index: 33;
+    left: 22%;
+  }
+  .sidea {
+    left: 0;
+    top: 42%;
+  }
+  .sideb {
+    left: 70%;
+    top: 50%;
+  }
+  .herobg {
+    bottom: -12%;
+  }
+  /* end of hero section */
+  /* about me */
+  .two {
+    height: 650px;
+    overflow: hidden;
+  }
+  .imgholder {
+    top: 2%;
+    left: 27%;
+  }
+
+  .two h2 {
+    top: 38%;
+    width: 90%;
+    left: 5%;
+  }
+  .two p {
+    width: 93%;
+    left: 3%;
+    top: 57%;
+  }
+  .two a {
+    top: 90%;
+    left: 32%;
+  }
+  /* end of about me */
+  /* my skills */
+  .three {
+    height: 1600px;
+  }
+  .gridsk {
+    grid-template-columns: repeat(1, 1fr);
+    top: 8%;
+    left: 5%;
+  }
+  /* end of my skills */
+  /* my project */
+
+  .four {
+    height: 1900px;
+  }
+  .four h2 {
+    top: 1%;
+    left: 20%;
+  }
+  .progrid {
+    grid-template-columns: repeat(1, 1fr);
+    top: 5%;
+    left: 12%;
+  }
+  /* end of my project */
+  /* contact */
+  .five {
+    height: 800px;
+    overflow: hidden;
+  }
+  .five h2{
+    left: 20%;
+    top: 5%;
+  }
+  .soc{
+    grid-template-columns: repeat(4, 1fr);
+    left: 5%;
+    top: 84%;
+    gap: 1rem;
+  }
+  form{
+    width: 80%;
+    left: 8%;
+  }
+  button {
+    position: absolute;
+    bottom: -20%;
+  left: -30%;
+     padding: 15px 30px;
+  }
+  /* end of contact */
+  /* footer */
+  .six{
+    height: 100px;
+    overflow: hidden;
+  }
+  .six h3{
+    font-size: 20px;
+    left: 2%;
+    text-align: center;
+  }
+  .six a img{
+    display: none;
+  }
+
+}
